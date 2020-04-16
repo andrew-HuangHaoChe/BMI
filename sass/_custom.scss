@@ -1,0 +1,221 @@
+$calcBtn:#ffd366;
+$inputColor:#646464;
+$placeColor:#989898;
+$bgColor:#424242;
+$tooLight:#31BAF9;
+$perfect:#86D73F;
+$tooHeavy:#FF982D;
+$mildOb:#FF6C02;
+$moderOb:#FF6C02;
+$sevOb:#FF1200;
+$btnHigh:100px;
+$btnWidth:100px;
+$placeText:22px;
+
+.box{
+    height: $btnHigh;
+    width: $btnWidth;
+    background-color: $calcBtn;
+    border-radius: 50%;
+}
+.watch{
+    font-family: Microsoft JhengHei;
+    height: $btnHigh;
+    width: $btnWidth;
+    background-color: $calcBtn;
+    border-radius: 50%;  
+    border: 0;
+    font-size: 22px;
+    cursor:pointer;
+        &:hover{
+            background-color:#ffd366;
+            box-shadow: 0 0 1em rgba(255, 211, 99, 0.6);
+        }
+}
+
+
+//表單樣式
+form >label{
+    display: block;
+}
+.h,.w{
+    display:block;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 6px;
+    margin-top: 5px;
+    width: 100%;
+    font-size: $placeText;
+    background-color: $inputColor;
+    border-color: $calcBtn;
+}
+.weLabel{
+    margin-top: 20px;
+}
+input::-webkit-input-placeholder{ 
+    color:$placeColor;
+    padding-left:10px;
+    font-size: $placeText;
+    font-family: Microsoft JhengHei;
+}
+//BMI標題
+.title{
+    text-align: center;
+}
+
+//BMI標題
+.content h1{
+    font-size: $placeText;
+}
+
+
+.circle{
+    width:$btnHigh;
+    height:$btnWidth;
+    background-color: $bgColor;
+    border-radius: 50%;
+    position: relative;
+}
+//按鈕樣式(共用)
+.resultStyle{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: $placeText;
+}
+
+.desText{
+    position: absolute;
+    right:-60px;
+    top:40px;
+    font-size: $placeText;
+}
+.fdesText{
+    position: absolute;
+    right:-100px;
+    top:40px;
+    font-size: $placeText;
+}
+
+//過輕
+.tooLight{
+    border: 5px solid $tooLight;
+}
+.lightText{
+    color:$tooLight;
+}
+//refresh按鈕
+.lightRe{
+    background-color: $tooLight;
+}
+//狀態列Bar
+.lightBar{
+    border-left: 3px solid $tooLight;
+}
+//理想
+.perfect{
+    border: 5px solid $perfect;
+}
+.perfectText{
+    position: absolute;
+    right:-60px;
+    top:40px;
+    font-size: $placeText;
+    color:$perfect;
+}
+.perfectRe{
+    background-color: $perfect;
+}
+.perfectBar{
+    border-left: 3px solid $perfect;
+}
+//過重
+.tooHeavy{
+    border: 5px solid $tooHeavy;
+}
+.tooheavyText{
+    color: $tooHeavy;
+}
+.tooHeavyRe{
+    background-color: $tooHeavy;
+}
+.tooHeavyBar{
+    border-left: 3px solid $tooHeavy;
+}
+//輕度肥胖
+.mildOb{
+    border: 5px solid $mildOb;
+}
+.mildObText{
+    color:$mildOb;
+}
+.mildobRe{
+    background-color: $mildOb;
+}
+.mildobBar{
+    border-left: 3px solid $mildOb;
+}
+//中度肥胖
+.moderOb{
+    border: 5px solid $moderOb;
+}
+.moderObText{
+    color:$moderOb;
+}
+.moderobRe{
+    background-color: $moderOb;
+}
+.moderobBar{
+    border-left: 3px solid $moderOb;
+}
+//重度肥胖
+.sevOb{
+    border: 5px solid $sevOb;
+}
+.sevObText{
+    color:$sevOb;
+}
+.sevobRe{
+    background-color: $sevOb;
+}
+.sevobBar{
+    border-left: 3px solid $sevOb;
+}
+//reflash按鈕
+.reflash{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding:3px;
+    position: absolute;
+    right: -3px;
+    bottom: 5px;
+}
+
+//狀態顏色
+.leftBar{
+    width: 3px;
+    height: 70px;
+}
+
+
+.record{
+    height: 70px;
+    padding: 10px;
+}
+
+.fa-trash{
+    color:$placeColor;
+}
+
+footer img{
+    height: 50px;
+    width: 50px;
+    margin:20px 0;
+}

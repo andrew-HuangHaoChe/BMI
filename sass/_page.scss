@@ -1,0 +1,79 @@
+$bgColor:#424242;
+$contentBg:#f5f5f5;
+
+
+.wrap{
+    width:100%;
+    background-color: $contentBg;
+}
+.header{
+    background-color:$bgColor;
+    padding: 100px 0 100px 0;
+}
+
+//含按鈕及表單區塊
+.calculation{
+    display: flex;
+    width: 600px;
+    margin:0 auto;
+    flex-direction:row;
+}
+//表單區塊
+.dataInput{
+    padding: 0 40px 0 80px;
+    color:$calcBtn;
+    width: 35%;
+}
+.count{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bmiLogo{
+    display: flex;
+    align-items: center;
+}
+//紀錄BMI值區塊
+.content{
+    margin-top: 30px;
+    min-height: calc(100vh - 70px);
+}
+.list{
+    width: 600px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+.list li{
+    padding:10px;
+    height: 50px;
+    width: 100%;
+    margin-bottom:10px;
+}
+.list span{
+    float: left;
+    width: 80px;
+    height: 50px;
+    padding:10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list a{
+    float: left;
+    height: 50px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//表尾
+footer{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: $calcBtn;
+    padding: 20px 0 20px 0;
+    margin-top: 30px;
+}
+
