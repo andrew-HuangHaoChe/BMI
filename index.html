@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="calculation">
+            <div class="bmiLogo">
+                <img src="https://github.com/andrew-HuangHaoChe/image/blob/master/BMICLogo.png?raw=true">
+            </div>
+            <div class="dataInput">
+            <form action="">
+                <label for="height">身高 cm</label>
+                <input type="text" id="height" class="h" placeholder="請輸入身高" style="padding:10px 0;">
+                <label for="weight" class="weLabel">體重 kg</label>
+                <input type="text" id="weight" class="w" placeholder="請輸入體重" style="padding:10px 0;">
+            </form>
+            </div>
+            <div class="count">
+                <button type="button" id="countId" class="watch">看結果</button>
+                <p id="totalId"></p>
+            </div>
+        </div>
+        </div>
+        <div id="main" class="content">
+            <h1 class="title">BMI紀錄</h1>
+            <ul class="list">
+
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <img src="https://github.com/andrew-HuangHaoChe/image/blob/master/BMICFooterLogo.png?raw=true" alt="">
+    </footer>
+    <script src="js/all.js"></script>
+</body>
+</html>
